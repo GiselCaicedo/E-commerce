@@ -1,0 +1,175 @@
+form {
+    border: 1px solid rgb(255, 255, 255);
+    margin-top: 10px;
+    padding: 3% 5%;
+    display: flex;
+    align-items: center;
+}
+
+
+input {
+    border: none;
+    outline: none;
+    box-shadow: none;
+    background: transparent;
+    color: white;
+    padding-left: 10px;
+    padding-right: 90px;
+    font-size: 16px;
+    width: 100%; 
+}
+
+
+.sectionFlex{
+    justify-content: center;
+    display: flex;
+    padding: 1%;
+    border-bottom: 1px solid rgb(90, 81, 81);
+}
+
+.shadowContainerList{
+    opacity: 0.7;
+    position: absolute;
+    height: 50px;
+    width: 100%;
+    text-align: center;
+    overflow-y: hidden;
+    background: linear-gradient(180deg, #000000 0%, rgba(24, 24, 24, 0) 100%);
+    z-index: 2;
+}
+
+.containerList{
+    height: 90px;
+    width: 100%;
+    text-align: center;
+    overflow-y: hidden;
+    background: #000000;
+        z-index: 2;
+}
+
+ul{
+    float: center;
+    margin-right: 20px;
+    
+}
+
+ul li{
+    font-family: 'Rambla', sans-serif;
+    display: inline;
+    line-height: 80px;
+    margin: 0 5px;
+    
+}
+
+ul li a{
+    color: #ffffff;
+    font-size: 18px;
+    padding: 25px 13px 10px;
+    font-family: 'Cambay', sans-serif;
+}
+
+li a.active, li a:hover{
+    color: #000000;
+    background: #e2e2e2;
+    transition: .5s;
+}
+
+
+.icons-section {
+    display: flex;
+    align-items: center;
+}
+
+.shoppingCart, .wishlist {
+    padding-left: 35px; 
+    font-size: 18px;
+}
+
+.userIcon{
+    padding-left: 35px; 
+    font-size: 18px;
+    display: none;
+}
+.login-register{
+    font-family: 'Cambay', sans-serif;
+    color: white;
+    padding-left: 35px;
+}
+
+.logoGameHut{
+    width: 40px;
+    margin: 10px;
+}
+
+.logoTitle{
+    color: white;
+    font-family: 'Russo One', sans-serif;;
+    padding-right: 5%;
+    margin-top: 18px;
+    margin-left: 4px;
+}
+
+.bottomCheck{
+    font-size: 30px;
+    color: #fff;
+    float: right;
+    line-height: 80px;
+    margin-top: 15px;
+    margin-right: 13px;
+    cursor: pointer;
+    display: none;
+}
+
+#check{
+    display: none;
+}
+
+
+
+@media (max-width: 682px) {
+
+    form, .login-register, .containerList{
+        display: none;
+    }
+    
+    .logoTitle{
+        margin-left: 0;
+        font-size: 18px;
+    }
+
+    .bottomCheck, .userIcon{
+        display: block;
+    }
+
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-color: #1A181B;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+
+    ul li{
+        display: block;
+        margin: 50px 0px;
+        line-height: 30px;
+    }
+
+    ul li a{
+        font-size: 20px;
+    }
+
+    li a:hover, li a.active{
+        background: none;
+        color: rgb(218, 217, 217);
+    }
+
+    #check:checked ~ ul{
+        left:0;
+    }
+}
+
+

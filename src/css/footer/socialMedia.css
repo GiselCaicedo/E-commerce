@@ -1,0 +1,18 @@
+.social-media{
+    font-size: 30px;
+    color: #fff;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+}
+
+.github{
+    color: #fff;
+    margin: 0px 10px;
+}
+
+.linkedin{
+    color: #fff;
+}
+

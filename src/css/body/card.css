@@ -1,0 +1,197 @@
+
+.border{
+    background: #252424;
+    margin-bottom: 10px;
+}
+
+.backgroundBody{
+    background-color: #0b0b0e;
+}
+
+.sectionTitle {
+    padding: 40px 0px 5px;
+    font-size: 20px;
+    color: #ffffff;
+    padding-left: 7%;
+}
+
+    .abs,
+    h2:after,
+    .cards .card figcaption,
+    .cards .card:after,
+    .card figcaption,
+    .card:after{
+    position: absolute;
+    }
+    .rel,
+    h2,
+    h2 strong,
+    .card{
+    position: relative;
+    }
+    .fix {
+    position: fixed;
+    }
+    .dfix {
+    display: inline;
+    }
+    .dib {
+    display: inline-block;
+    }
+    .db {
+    display: block;
+    }
+    .dn {
+    display: none;
+    }
+    .df,
+    .cards{
+    display: flex;
+    justify-content: center;
+    }
+    .dif {
+    display: inline-flex;
+    }
+    .dg {
+    display: grid;
+    }
+    .dig {
+    display: inline-grid;
+    }
+    .vm,
+    h2,
+    h2 strong,
+    h2 span {
+    vertical-align: middle;
+    }
+    body {
+    font-family: 'Alegreya Sans';
+    }
+    .wrapper {
+    padding: 15px;
+    justify-content: center;
+    }
+    h2 {
+    padding: 10px;
+    padding-left: 25px;
+    color: #ccc;
+    margin: 0;
+    }
+    h2 strong {
+    z-index: 2;
+    padding: 4px 8px;
+    }
+    h2 span {
+    font-size: 0.7em;
+    color: #aaa;
+    margin-left: 10px;
+    }
+    h2:after {
+    content: '';
+    z-index: 1;
+    bottom: 50%;
+    margin-bottom: -2px;
+    height: 2px;
+    left: 0;
+    right: 0;
+    background: #373d47;
+    }
+    .cards,
+    .news {
+    flex-flow: row wrap;
+    }
+.cards .card,
+    .news .card {
+    margin: 20px;
+    width: 280px;
+    height: 420px;
+    overflow: hidden;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.8);
+    transform-origin: center top;
+    transform-style: preserve-3d;
+    transform: translateZ(0);
+    transition: 0.3s;
+    }
+    .cards .card img,
+    .news .card img {
+    width: 100%;
+    min-height: 100%;
+}
+    .cards .card figcaption,
+    .news .card figcaption {
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 20px;
+    padding-bottom: 10px;
+    font-size: 20px;
+    text-shadow: 2px 2px 1px #000000;
+    background: linear-gradient(180deg, rgba(24, 0, 0, 0.00) 1.04%, rgba(11, 0, 0, 0.54) 90%);    
+    color: #fff;
+    transform: translateY(100%);
+    transition: 0.3s;
+    }
+.cards .card:after,
+    .news .card:after {
+        content: '';
+        z-index: 10;
+        width: 200%;
+        height: 100%;
+        top: -90%;
+        left: -20px;
+        opacity: 0.1;
+        transform: rotate(45deg);
+        background: linear-gradient(to top, transparent, #fff 15%, rgba(255,255,255,0.5));
+        transition: 0.3s;
+}
+    .cards .card:hover,
+    .news .card:hover,
+    .cards .card:focus,
+    .news .card:focus,
+    .cards .card:active,
+    .news .card:active {
+    box-shadow: 0 8px 16px 3px rgba(0,0,0,0.6);
+    transform: translateY(-3px) scale(1.05) rotateX(15deg);
+}
+    .cards .card:hover figcaption,
+    .news .card:hover figcaption,
+    .cards .card:focus figcaption,
+    .news .card:focus figcaption,
+    .cards .card:active figcaption,
+    .news .card:active figcaption {
+    transform: none;
+}
+    .cards .card:hover:after,
+    .news .card:hover:after,
+    .cards .card:focus:after,
+    .news .card:focus:after,
+    .cards .card:active:after,
+    .news .card:active:after {
+    transform: rotate(25deg);
+    top: -40%;
+    opacity: 0.15;
+}
+
+.custom-btn {
+    color: #fff;
+    border: 1px solid rgb(92, 90, 90);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    padding: 1% 4%;
+    margin: 3% auto 3%; 
+}
+
+
+.custom-btn:hover{
+    cursor: pointer;
+}
+
+
+@media (max-width: 682px){
+    .card{
+        padding-bottom: 17%;
+        flex-wrap: wrap;
+    }
+}
